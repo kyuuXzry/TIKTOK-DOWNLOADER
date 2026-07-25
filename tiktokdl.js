@@ -17,8 +17,8 @@ const path = require('path');
 const cheerio = require('cheerio');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
-module.exports = async (m, alipdev) => {
-  const { kyuuai, Reply, text, command, isRegistered, checkLimit, addLimit } = alipdev;
+module.exports = async (m, kyuudev) => {
+  const { kyuuai, Reply, text, command, isRegistered, checkLimit, addLimit } = kyuudev;
 
   if (!["tikdl", "tiktokdl"].includes(command)) return;
 
